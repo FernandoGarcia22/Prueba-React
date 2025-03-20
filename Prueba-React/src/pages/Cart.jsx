@@ -1,10 +1,10 @@
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
-import { UserContext } from "../context/UserContext"; // ✅ Importar UserContext
+import { UserContext } from "../context/UserContext";
 
 const Cart = () => {
   const { cart, aumentar, restar, total } = useContext(CartContext);
-  const { token } = useContext(UserContext); // ✅ Obtener token
+  const { token } = useContext(UserContext);
 
   return (
     <div className="container">

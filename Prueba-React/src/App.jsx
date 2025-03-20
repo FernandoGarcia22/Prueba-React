@@ -25,7 +25,6 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
 
-            {/* ✅ Si el usuario ya está autenticado, no puede acceder a /login ni /register */}
             <Route
               path="/register"
               element={
@@ -43,7 +42,6 @@ function App() {
               }
             />
 
-            {/* ✅ Ruta protegida: Si no está autenticado, redirige a /login */}
             <Route
               path="/profile"
               element={
